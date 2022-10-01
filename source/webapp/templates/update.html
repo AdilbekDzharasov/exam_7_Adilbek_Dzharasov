@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Update entry
+{% endblock %}
+
+{% block task %}
+
+  <div class="container">
+    <form action="{% url 'entry_update' entry.pk %}" method="POST">
+      {% include 'partial/entry_form.html' with button_text='Изменить запись' %}
+    </form>
+  </div>
+
+{% endblock %}
+
