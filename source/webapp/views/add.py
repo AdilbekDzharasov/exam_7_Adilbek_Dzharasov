@@ -19,4 +19,3 @@ def add_view(request):
         else:
             return render(request, 'add.html', context={'form': form})
 
-
