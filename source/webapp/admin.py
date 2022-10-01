@@ -1,5 +1,4 @@
 from django.contrib import admin
-
 from webapp.models import Entry
 
 
@@ -12,3 +11,4 @@ class EntryAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Entry, EntryAdmin)
+
