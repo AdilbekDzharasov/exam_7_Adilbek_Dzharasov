@@ -18,8 +18,8 @@ Guest book
                 <p class="card-text mb-auto"></p>
                 <small class="text-muted mb-4">Добавлена: {{ entry.created_at }}</small>
                 <div class>
-                  <a href="{% url 'entry_update' entry.pk %}" class="btn btn-sm btn-outline-secondary">Редактировать запись</a>
-                  <a href="{% url 'entry_delete' entry.pk %}" class="btn btn-sm btn-outline-secondary">Удалить запись</a>
+                  <a href="{% url 'entry_update' entry.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-pencil-fill"></i></a>
+                  <a href="{% url 'entry_delete' entry.pk %}" class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash-fill"></i></a>
                 </div>
               </div>
             </div>
