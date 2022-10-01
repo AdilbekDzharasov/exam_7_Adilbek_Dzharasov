@@ -7,6 +7,7 @@ from webapp.views.delete_view import delete_entries
 
 urlpatterns = [
     path('', home_view, name='home'),
+    path('entries', home_view, name='entry_home'),
     path('entry/add/', add_view, name='entry_add'),
     path('entry/update/<int:pk>', update_entries, name='entry_update'),
     path('entry/delete/<int:pk>', delete_entries, name='entry_delete'),
