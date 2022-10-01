@@ -3,7 +3,7 @@ from webapp.models import Entry
 from webapp.forms import EntryForm
 
 
-def update_entry(request, pk):
+def update_entries(request, pk):
     entry = get_object_or_404(Entry, pk=pk)
     if request.method == 'GET':
         form = EntryForm(initial={
